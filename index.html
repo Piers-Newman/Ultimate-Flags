@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Flags</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ultimate Flags</h1>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <div class="stats-container">
+            <div class="stats" id="left-stats">
+                <p>Current Streak: <span id="current-streak">0</span></p>
+                <p>Highest Streak: <span id="highest-streak">0</span></p>
+            </div>
+            <div id="flag-container">
+                <img id="flag" src="" alt="Country Flag">
+            </div>
+            <div class="stats" id="right-stats">
+                <p>Win Rate: <span id="win-rate">0</span>%</p>
+                <p>Total Attempts: <span id="total-attempts">0</span></p>
+            </div>
+        </div>
+        <div class="autocomplete">
+            <input type="text" id="guess-input" placeholder="Enter country name..." autocomplete="off">
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        <div class="buttons">
+            <button id="guess-button">Guess</button>
+            <button id="skip-button">Skip</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
